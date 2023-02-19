@@ -1,38 +1,232 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    transition: 0.1s ease-in-out;
+    z-index: 1;
+    cursor: url(D:\CS\ReactProjects\DevHunt2\devhunt2\src\Pages\Home\Components\Images\sword.png), auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+    text-decoration: none;
+    color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body{
+    background-color: black;
+    color: white;
+     
+}
+
+.navbar{
+  overflow: hidden;
+  position: fixed; 
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.right{
+    float: right;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+
+.navbar ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: black;
+}
+
+.navbar li {
+  font-size: 20px;
+  float: left;
+}
+
+.active {
+    color: black !IMPORTANT;
+    background-color: white;
+}
+
+.navbar li a {
+  display: block;
   color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.1s all ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar li a:hover {
+    color: black;
+    background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li img{
+    height:15vh;
+    width: auto;
+}
+
+.titleSection{
+    margin-top: 50px;
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titleOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.titleContent{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleScroll{
+    margin-top: 200px;
+    margin-bottom: 300px;
+
+}
+
+.titleScrollContainer{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.titleScrollTxt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleScrollImg img{
+    height: 60vh;
+    width: auto;
+}
+
+.coroselCont{
+    margin-bottom: 100px;
+    z-index: 1;
+}
+
+.coroselCont h1{
+    margin-bottom: 20px;
+
+}
+
+.coroselCard img{
+    height: auto;
+    width: 20vw;
+    background-color: red;
+    z-index: 1  ;
+}
+
+.coroselCard img:hover{
+    cursor: pointer;
+    width: 23vw;
+    z-index: 10;
+}
+
+.animeData{
+    display: flex;
+}
+
+.animeDataLeft{
+    display: flex;
+    flex-direction: column;
+}
+
+.animeDataLeft img{
+    height: 80vh;
+    width: auto;
+}
+
+.animeDataLeft button{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.animeDataRight{
+    margin-top: 50px;
+    padding: 50px;
+} 
+
+.animeDataRight p{
+    margin-top: 100px;
+}
+
+.animeCmt{
+    margin-top: 100px;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10px;
+}
+
+textarea {
+    margin: 20px;
+    width: 90%;
+    height: 20px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+.animeBtn{
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+.search{
+    padding: 20px;
+}
+
+.search h1{
+    text-align: center;
+}
+
+.search input{
+    width: 100%;
+}
+
+.search li{
+    list-style-type: none;
+    padding: 5px 10px;
 }
